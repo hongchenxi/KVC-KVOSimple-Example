@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		A0BBCE631C321FD300CEE09D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BBCE621C321FD300CEE09D /* main.m */; };
+		A0BBCE811C3227C400CEE09D /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BBCE7C1C3227C400CEE09D /* Person.m */; };
+		A0BBCE821C3227C400CEE09D /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BBCE7E1C3227C400CEE09D /* Student.m */; };
+		A0BBCE831C3227C400CEE09D /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BBCE801C3227C400CEE09D /* Teacher.m */; };
+		A0BBCE861C3227E700CEE09D /* KVOClass.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BBCE851C3227E700CEE09D /* KVOClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,14 @@
 /* Begin PBXFileReference section */
 		A0BBCE5F1C321FD300CEE09D /* KVC&KVO */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "KVC&KVO"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0BBCE621C321FD300CEE09D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A0BBCE7B1C3227C400CEE09D /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		A0BBCE7C1C3227C400CEE09D /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		A0BBCE7D1C3227C400CEE09D /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		A0BBCE7E1C3227C400CEE09D /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		A0BBCE7F1C3227C400CEE09D /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
+		A0BBCE801C3227C400CEE09D /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
+		A0BBCE841C3227E700CEE09D /* KVOClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOClass.h; sourceTree = "<group>"; };
+		A0BBCE851C3227E700CEE09D /* KVOClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +69,33 @@
 		A0BBCE611C321FD300CEE09D /* KVC&KVO */ = {
 			isa = PBXGroup;
 			children = (
+				A0BBCE7A1C3227C400CEE09D /* KVC */,
+				A0BBCE791C3227B300CEE09D /* KVO */,
 				A0BBCE621C321FD300CEE09D /* main.m */,
 			);
 			path = "KVC&KVO";
+			sourceTree = "<group>";
+		};
+		A0BBCE791C3227B300CEE09D /* KVO */ = {
+			isa = PBXGroup;
+			children = (
+				A0BBCE841C3227E700CEE09D /* KVOClass.h */,
+				A0BBCE851C3227E700CEE09D /* KVOClass.m */,
+			);
+			path = KVO;
+			sourceTree = "<group>";
+		};
+		A0BBCE7A1C3227C400CEE09D /* KVC */ = {
+			isa = PBXGroup;
+			children = (
+				A0BBCE7B1C3227C400CEE09D /* Person.h */,
+				A0BBCE7C1C3227C400CEE09D /* Person.m */,
+				A0BBCE7D1C3227C400CEE09D /* Student.h */,
+				A0BBCE7E1C3227C400CEE09D /* Student.m */,
+				A0BBCE7F1C3227C400CEE09D /* Teacher.h */,
+				A0BBCE801C3227C400CEE09D /* Teacher.m */,
+			);
+			path = KVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0BBCE831C3227C400CEE09D /* Teacher.m in Sources */,
+				A0BBCE811C3227C400CEE09D /* Person.m in Sources */,
+				A0BBCE861C3227E700CEE09D /* KVOClass.m in Sources */,
 				A0BBCE631C321FD300CEE09D /* main.m in Sources */,
+				A0BBCE821C3227C400CEE09D /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
